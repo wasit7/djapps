@@ -1,3 +1,4 @@
 ```python
-	django-admin startproject wlproject
+	django-admin startproject project
+	python manage.py clear sessions
 ```

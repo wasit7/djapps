@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.conf.urls import url, include
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^login/', include('wl_auth.urls'))
+    url(r'^admin/', admin.site.urls, name="admin"),
+    url(r'^auth/', include('wl_auth.urls', namespace="wl_auth") ),
+
 ]
