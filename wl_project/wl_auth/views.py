@@ -45,6 +45,9 @@ def signout(request):
 	logout(request)
 	return redirect('wl_auth:signin')
 
+def changePassword(request):
+	pass
+
 @login_required(login_url='wl_auth:signin')
 def home(request):
-	return render(request,'blank.html',{'msg': "Hello %s,"%request.session['username']})
+	return render(request,'table.html',{'msg': "Hello %s,"%request.session['username']})
