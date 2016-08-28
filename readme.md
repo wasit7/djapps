@@ -1,4 +1,9 @@
+To Start server
 ```python
-	django-admin startproject project
-	python manage.py clear sessions
+	python manage.py runserver
+```
+
+To clear all expired session
+```python
+	python manage.py clearsessions
 ```
